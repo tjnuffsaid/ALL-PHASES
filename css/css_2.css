@@ -1,0 +1,260 @@
+﻿@charset "utf-8";
+/*
+   Filename: css_2.css
+
+*/
+
+/* =============================================
+	Base layout
+	M1LO8 
+   =============================================
+*/
+
+
+html { /*  M2LO14 progressive enhancement for older browsers */
+	height: 150%;
+	background-color: rgb(8, 4, 0); 
+	background-color: hsl(25, 100%, 4%);
+}
+ /**/
+body { /* M2LO3 Style Inheritance  */
+	margin: 0px auto auto auto;
+	width: 85%;
+	height:185%;
+	position: relative;
+	background:linear-gradient(to bottom, rgb(251, 255, 190), black); /* M2LO15 CSS  Apply colors */
+	border-left: 1px solid rgb(155, 155, 155);/* M2LO15 CSS  Apply colors */
+	border-right: 1px solid rgb(189, 189, 189);
+	-moz-box-shadow: rgba(250, 255, 250, 0.9) 20px 0px 25px,  rgba(255, 255, 255, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(235, 235, 235, 0.9) 20px 0px 25px,  rgba(230, 243, 230, 0.9) -20px 0px 25px;
+	box-shadow: rgba(255, 255, 255, 0.9) 20px 0px 25px,  rgba(195, 197, 195, 0.9) -20px 0px 25px;
+} /* M4LO5 Demonstrate the use of text and box shadowing  */
+
+body > header img{ /* M2LO5 Demonstrated contextual selectors  */
+	display:block;
+	width:100%;
+}
+
+body > header nav {
+	display: block;
+	text-align: center;
+}
+/**/
+body > header nav ul li {
+	display:inline;
+	background-color: rgb(4, 0, 8);
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;/**/
+}
+body > header nav.fix {
+	width: 100%;
+}
+	 
+body > header nav.fix li a:visited, body nav.fix li a:link { /* M2LO11 pseudo-classes */
+	color: rgb(241, 238, 19);
+}
+
+
+/* */
+h1~h2 {color: rgb(255, 96, 5);} /* M2LO5 Demonstrated contextual selectors */
+h1#title {
+	text-align: center;
+	text-decoration: underline;
+}
+aside#about { /* M2LO6  Demonstrated a CSS id */
+	width: 100%;
+ }
+ 
+ aside#about h1 {
+	color: rgb(31, 31, 31);
+	font-size: 32px;
+	font-family: 'Courier New', courier, monospace;
+	font-weight: bold;
+	margin: 20px 0px 20px 20px;
+	text-align: center;
+ }
+ 
+aside#about p {
+	margin: 20px 0px 20px 20px;
+	color: rgb(31, 31, 31);
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	text-align: center;
+
+ }
+
+article#serve {
+	text-align: center;
+}
+article#serve h1 { 
+	text-decoration: underline;
+}
+article p::first-letter { font-family: ‘Times New Roman’, Times, serif; font-size: 125%; }
+
+article#index {
+	text-align: center;
+}
+article ol , li {
+	text-align: left;
+}
+body#c{  /* M2LO6  Demonstrated a CSS id */
+	text-align: center;
+}
+h1#c{
+	text-decoration: underline;
+} /* M2LO3 Style Specificity  */
+
+/* =============================================
+	imgs
+   =============================================
+*/
+
+img#work1 {
+	transform:rotate(-270deg); /* M4LO8 Demonstrated the use of transformations 2d */
+	width: 200px;
+	height: 200px;
+}
+img#work2 {
+	transform:rotate(-270deg);
+	width: 200px;
+	height: 200px;
+}
+
+img#work3 {
+	width: 200px;
+	height: 200px;
+}
+img#work4 {
+	width: 200px;
+	height: 200px;
+}
+img#work5 {
+	width: 200px;
+	height: 190px;
+}
+img#work6 {
+	width: 200px;
+	height: 200px;
+}
+img#work7 {
+	transform:rotate(-270deg); 
+	width: 200px;
+	height: 200px;
+}
+img#work8 {
+	transform:rotate(-270deg); 
+	width: 200px;
+	height: 200px;
+}
+img#work9 {
+	width: 200px;
+	height: 200px;
+}
+img#work10 {
+	width: 200px;
+	height: 200px;
+}
+img#work11 {
+	width: 200px;
+	height: 200px;
+}
+img#work12 {
+	width: 200px;
+	height: 200px;
+}
+img#work13 {
+	width: 200px;
+	height: 200px;
+}
+img#work14 {
+	width: 200px;
+	height: 200px;
+}
+img#work16 {
+	width: 200px;
+	height: 200px;
+}
+img#work19 {
+	width: 200px;
+	height: 200px;
+}
+
+
+
+img#fb{
+	position: absolute;/* M3LO8A Demonstrated absolute positioning */
+	bottom: 0;
+	right: 0;
+}
+/* */
+img#J{
+	position: relative;/*M3LO8B Demonstrated relative positioning */
+	height:25px; /*M3LO9 Demonstrated fixed positioning*/
+	width: 50px;
+}
+
+div{
+	display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+div #id1 {
+	flex-basis: 200px;
+	flex-grow: 1;
+	flex-shrink: 3;
+}
+
+div #id2 {
+	flex-basis: 200px;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+/*footer*/
+footer {
+	text-align: center;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 0.7em;
+	border-top: 2px solid rgba(39, 30, 0, 0.459);
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+/* Table Styles */
+table {
+    background: linear-gradient(to bottom, rgb(131, 130, 119) 20%, rgb(0, 0, 0)); 
+    border: dotted grey;
+ }
+
+td,tr{
+   border: 3px double rgb(168, 168, 156);
+   line-height: 1.4em;
+   padding: 8px;
+}
+
+th{
+   background: rgb(246, 250, 0);
+   color: rgb(14, 2, 2);
+   font-weight: normal;
+}
+td{
+   color: rgb(238, 231, 231);
+   font-size: 1em;
+   vertical-align: top;
+}
+
+
+
+/* Table Header Styles */
+
+ thead tr {
+     height: 30%;
+ }
+
+ thead tr:first-of-type {
+	 font-size: 25px;
+ }
+ 
+ thead tr:first-of-type th:not(:first-of-type){
+     background: rgba(197, 194, 0, 0.315);
+     color: rgb(2, 0, 0);
+ }
